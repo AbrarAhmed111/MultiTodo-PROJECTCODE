@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+/* LoginPage.css */
+#custom-input:focus {
+  outline: none;
+  box-shadow: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-container {
+  border: 1px solid black; /* Add border styles as needed */
+  border-radius: 0; /* Add border-radius styles as needed */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.background-image{
+  background-image: url('assets/bg-image.jpg');
+
+}
+#main-div{
+  padding-bottom: 160px;
+}
+#editbutton{
+  color: #ff9640;
+  
+}
+
+#card{
+  background-color: #4b5563;
+}
+
+#button{
+  background-color: #ff9640;
+}
+
+#main-container{
+  background-color: #ff9640;
+}
+
+#second-main-container{
+  background-color: #ff9640;
+}
+
+
+
+#heading {
+  color: #ff9640;
+  font-size: 80px;
+}
+
+#cards{
+  background-color: #4b5563;
+  max-height: 350px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 0.2rem;
+    height: 0rem;
+    scroll-behavior: smooth;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  ::-webkit-scrollbar-track {
+    background: theme-color("site-secondary1");
+  } 
+  ::-webkit-scrollbar-thumb {
+    background-color: #CECECE; 
+   border-radius: 1.25rem; 
   }
-  to {
-    transform: rotate(360deg);
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #A8A8A8;
   }
-}
